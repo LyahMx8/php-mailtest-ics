@@ -2,9 +2,9 @@
 <?php
 echo "entra";
 
-require('PHPMailer.php');
-require('SMTP.php');
-require('exception.php');
+require('PHPMailer/PHPMailer.php');
+require('PHPMailer/SMTP.php');
+require('PHPMailer/exception.php');
 
 class ICS {
 	public $data;
@@ -32,15 +32,15 @@ class ICS {
 	}
 }
 
-$from_name		= "Lyah Rally";
+$from_name		= "Lyah Motta";
 $from_address	= "lyah.smo@gmail.com";
-$to_name		= "Camilo Rally";
+$to_name		= "Camilo";
 $to_address		= "yimsanabria@gmail.com";
 $startTime		= "2024-07-06 09:00";
 $endTime 		= "2024-07-06 21:00";
 $subject		= "1:1 Camilo - Lyah";
 $description	= " Hola tu  te recodamos que tienes una reunion ñññ con tal en x <br><center><img src='https://blogs.iadb.org/seguridad-ciudadana/wp-content/uploads/sites/27/2016/05/alcatraz.jpg' width='350px' height='350px' ></center>" ;
-$location		= "La Picota, Bogotá";
+$location		= "La Candelaria, Bogotá";
 
 $event = new ICS();
 $event->setICS($startTime, $endTime, $subject, $description, $location);

@@ -1,6 +1,6 @@
 <?php 
 
-require_once('PHPMailer.php');
+require_once('PHPMailer/PHPMailer.php');
 
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
@@ -18,8 +18,9 @@ $location		= "La Picota, Bogotá";
 
 //Recipients
 $mail->setFrom($from_address, $from_name);
-$mail->addAddress('tyler@benefitscompliancesolutions.com', 'Tyler Borders'); //Name is optional
-$mail->addAddress('camilo.casadiego@trotalo.com', 'Camilo Casadiego');
+$mail->addAddress('zalemtostudios@gmail.com', 'Tyler Borders'); //Name is optional
+$mail->addAddress('yimsanabria@gmail.com', 'Camilo Casadiego');
+$mail->addAddress('lyah.smo@gmail.com', 'Camilo Casadiego');
 
 $data = "BEGIN:VCALENDAR\n".
     "VERSION:2.0\n".
