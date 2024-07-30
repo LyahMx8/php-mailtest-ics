@@ -60,4 +60,8 @@ class BcsCalendarInvite extends BaseController {
 
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0281844631d4fe9865a8fab0191523fac9eabb0d
